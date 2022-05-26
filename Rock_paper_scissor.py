@@ -34,38 +34,40 @@ print(map[0])
 print(map[1])
 print(map[2])
 print("computer chose "+ map[computerr])
-user=input("Type '0' for rock,'1' for scissor,'2' for paper")
+user=input("Type '0' for rock,'1' for scissor,'2' for paper\n")
 
-
-
-print("computer choose"+ map[computerr])
-
-print("You choose"+ map[int(user)])
-
-computer=str(computerr)
-
-if computer=='0':
-
-
-    if user=='0':
-
-        print("DRAW")
-    elif user=='1':
-        print("YOU WON")
-    else:
-        print("You LOST,BETTER LUCK NEXT TIME!!!")
-  
-elif computer =='1':
-    if user=='1':
-        print("DRAW")
-    elif user=='0':
-        print("You LOST,BETTER LUCK NEXT TIME!!!")
-    else:
-        print("YOU WON")
+if(int(user)>2):
+    print("Invalid click")
 else:
-    if user=='2':
-        print("DRAW")
-    elif user=='0':
-        print("YOU WON")
+
+    print("computer choose"+ map[computerr])
+
+    print("You choose"+ map[int(user)])
+
+    computer=str(computerr)
+
+    if computer=='0':
+
+
+        if user=='0':
+
+            print("DRAW")
+        elif user=='1':
+            print("YOU WON")
+        else:
+            print("You LOST,BETTER LUCK NEXT TIME!!!")
+    
+    elif computer =='1':
+        if user=='1':
+            print("DRAW")
+        elif user=='0':
+            print("You LOST,BETTER LUCK NEXT TIME!!!")
+        else:
+            print("YOU WON")
     else:
-        print("You LOST,BETTER LUCK NEXT TIME!!!")
+        if user=='2':
+            print("DRAW")
+        elif user=='0':
+            print("YOU WON")
+        else:
+            print("You LOST,BETTER LUCK NEXT TIME!!!")
